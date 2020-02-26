@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion Demo Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link href="/css/accordion.css" rel="stylesheet"-->
+    <link href="../css/accordion.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/accordion.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>Accordion Demo</h1>
+<div id ="my-accordion" ></div>
+<script type="text/javascript">
+    const options = {
+        container: 'my-accordion',
+        mainTitle: 'Main Accordion title',
+        panels: [{
+            title: 'My Profile',
+            subTitle: 'Change you profile information, email and other personal details',
+            content: '<p>content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry</p>'
+        }, {
+            title: 'Change Password',
+            subTitle: 'Change your password to access the LMS',
+            content: '<p>content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry</p>'
+        }, {
+            title: 'Preferences',
+            subTitle: 'Set your language and timezones preferences.',
+            content: '<p>content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry</p>'
+        }, {
+            title: 'No description title',
+            content: '<p>content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry.' +
+                'content has simply dummy text of the printing and typesetting industry</p>'
+        }]
+    };
+    const accordion = new Accordion(options);
+</script>
+<!--div id="accordion">
+    <div class="title">Heading 1</div>
+    <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+    <div class="title">Heading 2</div>
+    <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div></div>
+-->
+</body>
+</html>

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+#my-accordion {
+  max-width: 100%;
+  margin: 25px;
+}
+#my-accordion .main-title, #my-accordion .title {
+  background: #fff;
+  padding: 20px 25px 25px 25px;
+  height: 60px;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+#my-accordion .title {
+  color: #0465ac;
+  font-size: 14px;
+  height: 70px;
+}
+#my-accordion .no-desc {
+  height: 50px;
+}
+#my-accordion .subTitle {
+  color: #999;
+  font-size: 12px;
+  font-weight: normal;
+  padding-top: 12px;
+}
+#my-accordion .title:before {
+  content: "˅";
+  color: #0465ac;
+  font-weight: bold;
+  float: right;
+  margin-left: 25px;
+  padding: 0 25px 25px 25px;
+  height: 0;
+  font-size: 26px;
+}
+#my-accordion .active:before {
+  content: "˄";
+  font-size: 26px;
+}
+#my-accordion .title.active {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: auto;
+  font-size: 18px;
+}
+#my-accordion .panel {
+  color: #333;
+  font-size: 13px;
+  font-weight: normal;
+  border-top: 0;
+  background-color: white;
+  max-height: 0px;
+  overflow: hidden;
+}
+#my-accordion .title.active .panel {
+  max-height: 80px;
+  padding-top: 25px;
+  margin-bottom: 30px;
+  padding-right: 25px;
+  overflow-y: auto;
+  width: 98%;
+}
+
+/*# sourceMappingURL=accordion.css.map */

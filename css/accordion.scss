@@ -1,0 +1,73 @@
+$shadow:0px 2px 3px 1px rgba(0,0,0,0.2);
+$black:#333;
+
+#my-accordion {
+  max-width: 100%;
+  margin: 25px;
+
+  .main-title, .title {
+    background: #fff;
+    padding: 20px 25px 25px 25px;
+    height: 60px;
+    color:$black;
+    font-weight: bold;
+    font-size:18px;
+    box-shadow: $shadow;
+
+  }
+  .title{
+    color: #0465ac;
+    font-size:14px;
+    height: 70px;
+  }
+  .no-desc{
+    height: 50px;
+  }
+
+  .subTitle{
+    color:#999;
+    font-size:12px;
+    font-weight: normal;
+    padding-top: 12px;
+  }
+
+  .title:before {
+    content: '\02C5';
+    color: #0465ac;
+    font-weight: bold;
+    float: right;
+    margin-left: 25px;
+    padding: 0 25px 25px 25px;
+    height:0;
+    font-size:26px;
+  }
+  .active:before {
+    content: "\02C4";
+    font-size:26px;
+  }
+  .title.active {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+    font-size:18px;
+
+  }
+  .panel {
+    color: $black;
+    font-size:13px;
+    font-weight: normal;
+    border-top: 0;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .title.active .panel{
+    max-height: 80px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    padding-right: 25px;
+    overflow-y: auto;
+    width: 98%;
+  }
+
+}
